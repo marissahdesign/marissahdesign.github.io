@@ -1,0 +1,393 @@
+
+@font-face {
+	font-family: "MisreadVF";
+	src: url("fonts/MisreadVF.ttf") format("truetype-variations");
+
+}
+
+:root{
+	--text-size: 5.5em;
+	--text-msrd: 500;
+}
+
+body{
+	cursor: default;
+}
+
+/* TOP BANNER */
+
+.ticker-item{
+	font-family: "MisreadVF";
+	color:black;
+	font-size: 50px;
+}
+
+.ticker-item::selection{
+	background: yellow;
+}
+
+.ticker-wrap{
+	box-sizing: border-box;
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	padding-top: 25px;
+}
+
+@keyframes ticker {
+	0% {
+        transform: translate3d(0%,0,0);
+        visibility: visible;
+    }
+    50% {
+        transform: translate3d(-70%,0,0);
+    }
+	100% {
+        transform: translate3d(0%,0,0);
+        visibility: visible;
+    }
+}
+
+.ticker{
+	animation: ticker 100s infinite linear;
+	display: inline-block;
+	white-space: nowrap;
+	transition-timing-function: ease-in-out;
+}
+
+.tickerspan{
+	font-variation-settings:  "MSRD" 1000;
+}
+
+.tickerspan::selection{
+	background: yellow;
+}
+
+/* TYPE TEXT */
+
+
+.container{
+	width:100%;
+	position:absolute;
+	padding: 30px;
+	font-family: sans-serif;
+	font-size: 22px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item{
+	width: 25%;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Inter', sans-serif;
+	color: #936849;
+	font-size: 16px;
+	line-height: 18px;
+
+}
+
+.item::selection{
+	background: yellow;
+}
+
+.box{
+	height:650px;
+	padding: 20px;
+}
+
+
+
+.typetext{
+	font-family: "MisreadVF", sans-serif;
+	font-variation-settings:  "MSRD" var(--text-msrd);
+	font-size: var(--text-size);
+	text-align: center;
+}
+
+.typetext:hover{
+	cursor: url(cursor/cursor.png) 15 15 , auto;
+}
+
+
+
+.typetext::selection{
+	background: yellow;
+}
+
+/* SLIDER */
+
+.typetext{
+	outline: none;
+	border-style: none;
+	width:100%;
+	height:600px;
+	margin-top: 20px;
+}
+
+
+.slider1{
+	width: 72%;
+	-webkit-appearance: none;
+	height: 1.3px;
+	background:black;
+
+}
+
+
+.slider2{
+	width: 72%;
+	-webkit-appearance: none;
+	height: 1.3px;
+	background: black;
+
+}
+
+.slider1::-webkit-slider-thumb {
+	-webkit-appearance: none; 
+	appearance: none;
+	width: 20px; 
+	height: 20px; 
+	border-radius:100%;
+	background: #936849; 
+	cursor: pointer; 
+  }
+
+  .slider1::-moz-range-thumb{
+	-webkit-appearance: none; 
+	appearance: none;
+	width: 20px; 
+	height: 20px; 
+	border-radius:100%;
+	background: #936849; 
+	cursor: pointer; 
+  }
+
+  .slider1::-webkit-slider-thumb:hover{
+	background: yellow; 
+	border-color: #936849;
+	border-style:solid;
+	border-width: 1.3px;
+  }
+
+
+.slider2::-webkit-slider-thumb {
+	-webkit-appearance: none; 
+	appearance: none;
+	width: 20px; 
+	height: 20px; 
+	border-radius:100%;
+	background: #936849; 
+	cursor: pointer; 
+  }
+
+  .slider2::-moz-range-thumb{
+	-webkit-appearance: none; 
+	appearance: none;
+	width: 20px; 
+	height: 20px; 
+	border-radius:100%;
+	background: #936849; 
+	cursor: pointer; 
+  }
+
+  .slider2::-webkit-slider-thumb:hover{
+	background: yellow; 
+	border-color: #936849;
+	border-style:solid;
+	border-width: 1.3px;
+  }
+  /* SLIDER */
+
+.container2{
+	width:50%;
+	display: flex;
+	flex-wrap: wrap;
+	height:70px;
+}
+
+.item2{
+	width: 14%;
+	text-align:center;
+	height: 60px;
+	font-family: 'Inter', sans-serif;
+	color: #936849;
+	font-size: 16px;
+}
+
+
+.item2::selection{
+	background: yellow;
+}
+
+.item2a::selection{
+	background: yellow;
+}
+
+
+/* Sample text */
+
+.container3{
+	width:48%;
+	padding-top: 150px;
+	margin-right: 1%;
+}
+.container4{
+	width:48%;
+	padding-top: 150px;
+	margin-left: 1%;
+}
+
+.sample1{
+	font-family: "MisreadVF", sans-serif;
+	font-variation-settings:  "MSRD" 0;
+	font-size: 25pt;
+	line-height: 30pt;
+}
+
+.sample1::selection{
+	background: yellow;
+}
+.sample2::selection{
+	background: yellow;
+}
+
+.sample2{
+	font-family: "MisreadVF", sans-serif;
+	font-variation-settings:  "MSRD" 1000;
+	font-size: 25pt;
+	line-height: 30pt;
+}
+
+.samplespan{
+	color:#936849;
+}
+
+.samplespan::selection{
+	background: yellow;
+}
+
+/* animation sample */
+
+.container5{
+	padding-top:130px;
+	width:100%;
+}
+
+.container5::selection{
+	background: yellow;
+}
+
+.sample3{
+	outline: none;
+	border-style: none;
+	font-family: "MisreadVF", sans-serif;
+	font-size: 100pt;
+	text-align:center;
+	transition: 2s ease;
+  animation-name: sample3-animation;
+  animation-duration: 3.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes sample3-animation {
+	0% {
+		font-variation-settings: "MSRD" 500;
+	  }
+	  50% {
+		font-variation-settings: "MSRD" 1000;
+	  }
+	  100%{
+		  font-variation-settings: "MSRD" 0;
+	}
+  }
+
+.sample4{
+	outline: none;
+	border-style: none;
+	font-family: "MisreadVF", sans-serif;
+	font-size: 100pt;
+	text-align:center;
+	transition: 1.5s ease;
+  animation-name: sample4-animation;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes sample4-animation {
+	from {
+	  font-variation-settings: "MSRD" 1000;
+	}
+	to {
+	  font-variation-settings: "MSRD" 0;
+	}
+  }
+
+.sample5{
+	outline: none;
+	border-style: none;
+	font-family: "MisreadVF", sans-serif;
+	font-size: 100pt;
+	text-align:center;
+	transition: 2s ease;
+  animation-name: sample5-animation;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes sample5-animation {
+	0% {
+	  font-variation-settings: "MSRD" 500;
+	}
+	50% {
+	  font-variation-settings: "MSRD" 0;
+	}
+	100%{
+		font-variation-settings: "MSRD" 1000;
+
+	}
+  }
+
+
+.sample3:hover{
+	cursor: url(cursor/cursor.png) 15 15 , auto;
+}
+
+.sample4:hover{
+	cursor: url(cursor/cursor.png) 15 15 , auto;
+}
+
+.sample5:hover{
+	cursor: url(cursor/cursor.png) 15 15 , auto;
+}
+
+/* end text */
+
+.container6{
+	width:100%;
+	padding-top: 100px;
+	font-family: 'Inter', sans-serif;
+	color: #936849;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.container6::selection{
+	background: yellow;
+}
+
+.endtextlink{
+	font-family: 'Inter', sans-serif;
+	color: #936849;
+	font-size: 16px;
+}
+
+
+/* button */
+
